@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Weather Dashboard</title>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	    <link rel="stylesheet" href="/assets/styles.css">
+	</head>
+	<body>
+	
+<!--header-->
+<div class="row" id="header">
+    <div class="col-10" id="weatherdashboard">
+        <h1 class=”text-center mb-3 p-2 text-bold"> Weather Dashboard</h1>
+    </div>
+</div>
+<!--city search-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <form>
+                <div class="input-group m-3 pr-3">
+                    <div class="col-12 text-center">
+                        <h2>Search for a City:</h2>
+                    </div>
+                    <input type="text" class="form-control" id="cityInput" placeholder="Search City">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-dark" type="submit" id="searchBtn">Search<i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <main class="col-10 display-blocks">
+                <div class="city-display">
+                    <div class="city-display-content" id="city-stats-space"></div>
+                    <div class="current-stats-content" id="current-stats-space"></div>
+                </div>
+<!--weather forecast-->
+                <div class="forecast-display">
+                    <h3>Five Day Forecast</h3>
+                    <div class="forecast-daily-boxes" id="forecast-boxes">
+                    </div>
+                </div>
+            </main>
+    
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/187d34ad7c.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="assets/js/js.js"></script>
+</body>
+</html>
+
